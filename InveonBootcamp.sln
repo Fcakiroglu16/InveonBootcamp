@@ -4,6 +4,8 @@ VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InveonBootcamp.App", "InveonBootcamp.App\InveonBootcamp.App.csproj", "{9FB11E5D-7031-4310-A276-DFEF9DE265FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestPractices.API", "BestPractices.API\BestPractices.API.csproj", "{FCD4A666-BC15-4F85-BC6F-E8A4685E12AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +16,10 @@ Global
 		{9FB11E5D-7031-4310-A276-DFEF9DE265FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FB11E5D-7031-4310-A276-DFEF9DE265FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FB11E5D-7031-4310-A276-DFEF9DE265FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCD4A666-BC15-4F85-BC6F-E8A4685E12AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD4A666-BC15-4F85-BC6F-E8A4685E12AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD4A666-BC15-4F85-BC6F-E8A4685E12AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD4A666-BC15-4F85-BC6F-E8A4685E12AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
