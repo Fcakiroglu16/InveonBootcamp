@@ -10,6 +10,21 @@ namespace BestPractices.API.Controllers
     [ApiController]
     public class OrdersController(IMemoryCache memoryCache, IDistributedCache distributedCache) : ControllerBase
     {
+        public async Task<IActionResult> Process(List<int> userIdList, CancellationToken cancellationToken)
+        {
+            foreach (var i in userIdList)
+            {
+                if (cancellationToken.IsCancellationRequested)
+                {
+                    break;
+                }
+                //1. operation
+                //2. operation
+                //3. operation
+            }
+        }
+
+
         [HttpPost]
         public IActionResult Create(OrderCreateDto request)
         {
