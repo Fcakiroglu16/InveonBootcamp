@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestPractices.API", "BestPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorHandling.API", "ErrorHandling.API\ErrorHandling.API.csproj", "{A117B329-6C84-45EA-82FA-85C06B64F396}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.API", "DesignPattern.API\DesignPattern.API.csproj", "{9CF6563B-9BD0-41F7-8736-BC95B1370DEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{A117B329-6C84-45EA-82FA-85C06B64F396}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A117B329-6C84-45EA-82FA-85C06B64F396}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A117B329-6C84-45EA-82FA-85C06B64F396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CF6563B-9BD0-41F7-8736-BC95B1370DEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF6563B-9BD0-41F7-8736-BC95B1370DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF6563B-9BD0-41F7-8736-BC95B1370DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF6563B-9BD0-41F7-8736-BC95B1370DEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
