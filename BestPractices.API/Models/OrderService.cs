@@ -8,20 +8,16 @@ namespace BestPractices.API.Models
     {
         public ServiceResult Create()
         {
-            //
-
-
             var order = new Order();
             try
             {
-                order.AddItem();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
                 throw;
             }
-         
+
 
             return new ServiceResult();
 
@@ -51,27 +47,6 @@ namespace BestPractices.API.Models
 
         public ServiceResult Update(OrderUpdateDto updateOrder)
         {
-
-            // context.order.any(x=>x.orderId=updateOrder.Id)
-
-            if (false)
-            {
-                //throw new Exception("Güncellemeye çalıştığınız sipariş bulunamadı");
-
-                return  new ServiceResult()
-                {
-                    ProblemDetails = new ProblemDetails()
-                    {
-                        Title = ""
-                    }
-                }
-            }
-
-
-            return true;
-
-
-
             throw new Exception("");
         }
     }

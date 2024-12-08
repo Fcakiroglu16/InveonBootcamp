@@ -39,8 +39,11 @@ namespace DesignPattern.API.HasAIsA
         void Right();
     }
 
+
     public class SuperCarLeftOrRightBehavior : ILeftOrRightBehavior
     {
+        
+
         public void Left()
         {
             Console.WriteLine("Super- Left");
@@ -137,7 +140,7 @@ namespace DesignPattern.API.HasAIsA
         }
     }
 
-    public partial class CarB : Vehicle
+    public class CarB : Vehicle
     {
         public CarB()
         {
