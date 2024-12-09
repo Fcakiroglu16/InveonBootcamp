@@ -1,4 +1,7 @@
-﻿namespace IdentityApp.Web.Models.Repositories
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace IdentityApp.Web.Models.Repositories
 {
     public class UserFeature
     {

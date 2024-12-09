@@ -8,21 +8,31 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.EntityFrameworkCore;
 
 namespace IdentityApp.Web.Controllers
 {
     public class HomeController(
         UserManager<AppUser> userManager,
         RoleManager<AppRole> roleManager,
-        SignInManager<AppUser> signInManager) : Controller
+        SignInManager<AppUser> signInManager,
+        AppDbContext context) : Controller
     {
         public IActionResult AccessDenied()
         {
             return View();
         }
 
-        public IActionResult Index()
+        public static bool CheckPhoneNumber(string phoneNumber)
         {
+            return true;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            var users = (await context.Users.ToListAsync()).AsParallel().Where(x => x.EmailConfirmed);
+
+
             HttpContext.Response.Cookies.Append("name", "ahmet");
 
             var x = HttpContext.Session.Id;
